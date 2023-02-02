@@ -1,0 +1,39 @@
+*{
+	font-family: georgina;
+	font-weight: 100;
+}
+
+.div-responsive{
+	background: #c95;
+}
+
+@media screen and (min-width: 400px) and (max-width: 650px) {
+	.div-responsive{
+		background: red;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

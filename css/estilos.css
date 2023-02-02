@@ -1,0 +1,37 @@
+*{
+	font-family: georgia;
+	font-weight: 100;
+}
+
+
+
+.flex-cointainer{
+	display: flex;	
+	flex-wrap: wrap;	
+	min-width:150px;
+	text-align: center;
+	height: 100px;
+	
+}
+
+
+.caja1{
+	background-color:#248;
+	color:#fff;
+    margin:5px;
+	flex-basis: 300px;
+flex-grow: 1
+}
+
+.caja3{
+	background: orange;
+margin:5px;
+flex-basis: 300px;
+flex-grow: 1
+}
+.caja2{
+	background: green;
+ margin:5px;
+flex-basis: 300px;
+flex-grow: 1
+}
