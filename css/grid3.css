@@ -1,0 +1,50 @@
+*{
+	font-family: georgia;
+	font-weight: 100;
+}
+
+body{
+	background: radial-gradient(circle, #fff,#bbb);
+	
+}
+
+
+
+.grid-container{	
+background: #444;
+margin: 10px;
+display: grid;
+grid-template-areas: 
+"header header header"
+"aside main main"
+"aside main main"
+"footer footer footer";
+grid-template-rows:1fr 1fr 1fr 1fr;
+height: 92vh;
+border: 5px solid #000;
+}
+.grid-item{
+	padding: 20px;
+}
+
+
+
+
+.grid-header{
+	background-color: orange;
+	grid-area: header;
+}
+.grid-aside{
+	background-color: grey;
+	grid-area: aside;
+}
+.grid-main{
+	background-color:violet;
+	grid-area: main;
+}
+.grid-footer{
+	background-color: green;
+	grid-area: footer;
+}
+
+
