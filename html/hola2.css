@@ -1,0 +1,45 @@
+*{
+
+font-family: georgia, cursive;
+font-weight: 100;
+font-size: 40px;
+}
+
+/*form{
+margin:100px auto;
+display: block;
+background: blue;
+padding: 50px;
+width: 50%;
+
+
+}
+input{
+padding: 10px;
+width: 100%
+}
+
+/*seudo elemento
+input::placeholder{
+	color: red;
+	font-size: 20px;
+	
+}
+
+input::selection{
+	color: red;
+	background: black;
+}*/
+
+.caja1{
+	height: 200px;
+	width: 200px;
+	background: blue;
+	border: 5px solid yellow;
+}
+.caja1:active{
+	background: red;
+	height: 300px;
+	width: 300px;
+
+}
