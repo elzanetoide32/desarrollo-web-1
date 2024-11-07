@@ -1,0 +1,129 @@
+footer{
+    color:white;
+    background-color: black ;
+}
+
+ 
+  /* Efecto de hover */
+ul li:hover {
+    background-color: #5a5a5a;  /* Cambia el color de fondo */
+    color: white;               /* Cambia el color del texto */
+    transform: scale(1.05);      /* Agranda ligeramente el elemento */
+  }
+
+.slide-in {
+    transform: translateX(-100%);
+    animation: slideInAnimation 2.5s ease-out forwards;
+  }
+
+@keyframes slideInAnimation {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  .sky {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
+    overflow: hidden;
+}
+
+/* Estilo del avión */
+.plane {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    width: 100px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 50px 50px 20px 20px;
+    transform: translateY(-50%);
+    box-shadow: -5px 0px 0px #333, -8px 8px 0px #FFF;
+    animation: flyAcross 6s linear infinite;
+}
+
+/* Efecto de vuelo */
+@keyframes flyAcross {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Alas del avión */
+.plane:before,
+.plane:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 30px;
+    height: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.plane:before {
+    left: -20px;
+    transform: rotate(30deg);
+}
+
+.plane:after {
+    right: -20px;
+    transform: rotate(-30deg);
+}
+
+/* Estilo de las plantas */
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.plant {
+    width: 20px;
+    height: 0;
+    background-color: #228B22;
+    border-radius: 0 0 5px 5px;
+    animation: grow 6s ease-out infinite;   
+}
+
+.plant.lettuce {
+    background-color: #76c36a;
+    width: 30px;
+}
+
+.plant.tomato {
+    background-color: #FF6347;
+    width: 25px;
+}
+
+/* Animación de crecimiento */
+@keyframes grow {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 60px;
+    }
+}
